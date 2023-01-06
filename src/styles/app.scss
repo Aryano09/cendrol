@@ -1,0 +1,93 @@
+$screenWidth: 1440;
+$screenHeight: 1024;
+
+@function px-to-vh($px) {
+  @return (($px / $screenHeight) * 100) * 1vh;
+}
+
+@function px-to-vw($px) {
+  @return (($px / $screenWidth) * 100) * 1vw;
+}
+
+@function em-to-vh($em) {
+  @return ((($em * 16) / $screenHeight) * 100) * 1vh;
+}
+
+@function em-to-vw($em) {
+  @return ((($em * 16) / $screenWidth) * 100) * 1vw;
+}
+
+body{
+    background-color: #86E5FF;
+}
+
+.header{
+    font-size: px-to-vw(40);
+    text-align: center;
+}
+
+.main{
+    
+    height : 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    .card{
+        display: flex;
+        background-color: white;
+        border-radius: px-to-vh(5);
+        height: px-to-vh(220);
+        width: px-to-vw(400);
+        margin: px-to-vw(20);
+        margin: px-to-vw(30);
+    
+        .card-img{
+            img{
+                height: px-to-vh(200);
+                border-radius: px-to-vh(5); 
+                margin: px-to-vh(10);
+            }
+        }
+
+        .card-info{
+            .info-title{
+                font-size: px-to-vh(40);
+                font-style: italic;
+                font-weight: 300;
+                padding: px-to-vh(10);
+            }
+
+            .info-body{
+                font-size: px-to-vh(25);
+                text-align: center;
+                font-weight: 200;
+            }
+
+            .info-tags{
+                background-color: rgb(227, 225, 225);
+                display: flex;
+                border-radius: px-to-vh(5);
+                position :relative;
+                bottom: -2vh;
+
+                .tag{
+                    padding-left: px-to-vw(25);
+                    padding-right: px-to-vw(20);
+                    padding-top: px-to-vh(5);
+                    padding-bottom: px-to-vh(10);
+
+                    .tag-name{
+                        font-size: px-to-vh(15);
+                        font-weight: 300;
+                    }
+                    .tag-value{
+                        font-size: 30;
+                        font-weight: 400;
+                        font-family:Georgia, 'Times New Roman', Times, serif;
+                    }
+                }
+            }
+        }
+    }
+}
+

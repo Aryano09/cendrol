@@ -1,0 +1,61 @@
+body {
+  background-color: #86E5FF;
+}
+
+.header {
+  font-size: 2.7777777778vw;
+  text-align: center;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .card {
+  display: flex;
+  background-color: white;
+  border-radius: 0.48828125vh;
+  height: 21.484375vh;
+  width: 27.7777777778vw;
+  margin: 1.3888888889vw;
+  margin: 2.0833333333vw;
+}
+.main .card .card-img img {
+  height: 19.53125vh;
+  border-radius: 0.48828125vh;
+  margin: 0.9765625vh;
+}
+.main .card .card-info .info-title {
+  font-size: 3.90625vh;
+  font-style: italic;
+  font-weight: 300;
+  padding: 0.9765625vh;
+}
+.main .card .card-info .info-body {
+  font-size: 2.44140625vh;
+  text-align: center;
+  font-weight: 200;
+}
+.main .card .card-info .info-tags {
+  background-color: rgb(227, 225, 225);
+  display: flex;
+  border-radius: 0.48828125vh;
+  position: relative;
+  bottom: -2vh;
+}
+.main .card .card-info .info-tags .tag {
+  padding-left: 1.7361111111vw;
+  padding-right: 1.3888888889vw;
+  padding-top: 0.48828125vh;
+  padding-bottom: 0.9765625vh;
+}
+.main .card .card-info .info-tags .tag .tag-name {
+  font-size: 1.46484375vh;
+  font-weight: 300;
+}
+.main .card .card-info .info-tags .tag .tag-value {
+  font-size: 30;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}/*# sourceMappingURL=app.css.map */
